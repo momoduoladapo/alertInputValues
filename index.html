@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Javascript Form Input Values Alert</title>
+	</head>
+	<body>
+	
+		<div id="container">
+			<h1>Hello, Folasayo!</h1>
+			<h4>Input your alert data below : </h4>
+			<form action="" id="form" onsubmit="sConsole(event)">
+			  <input type="text" name="name" id="name" placeholder="name"><br><br>
+			  <input type="email" name="email" id="email" placeholder="email"><br><br>
+			  <input type="tel" name="phone" id="phone" placeholder="phone"><br><br>
+			  <select name="cars" id="cars">
+				  <option default>Select a car of your choice</option>
+				  <option value="Ijapa">Ijapa</option>
+				  <option value="Kokoro">Kokoro</option>
+				  <option value="Esin">Esin</option>
+			  </select><br><br>
+			  <button type="submit">Submit</button>
+			</form>
+		  </div>
+	</body>
+
+	<script type="text/javascript">
+		//Code block to make our form get user input and send an alert to the screen.
+		sConsole = (event) => {
+			event.preventDefault();
+			const name = document.getElementById("name").value;
+			const email = document.getElementById("email").value;
+			const phone = document.getElementById("phone").value;
+			const cars = document.getElementById("cars").value;
+			alert(name + " " + email + " " + phone + " " + cars);
+		}
+
+
+
+
+
+	</script>
+
+	</html>	
